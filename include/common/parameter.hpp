@@ -56,6 +56,10 @@ static ROIParams getRoiParams(const ros::NodeHandle& nh,
 
     nh.getParam(ns + "/roi_type", params.type);
 
+    // Voxel
+    nh.getParam(ns + "/voxel_size", params.voxel_size);
+    nh.getParam(ns + "/min_point_per_voxel", params.min_point_per_voxel);
+
     nh.getParam(ns + "/roi_lidar_height_m", params.roi_lidar_height_m);
     // Horizontal range
     nh.getParam(ns + "/roi_radius_min_m", params.roi_radius_min_m);

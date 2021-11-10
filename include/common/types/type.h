@@ -89,6 +89,10 @@ struct VolumetricModelParams {
 /*------------------------------ Parameter type ------------------------------*/
 struct ROIParams {
     std::string type;
+    
+    // Voxel
+    float voxel_size;
+    float min_point_per_voxel;
 
     float roi_lidar_height_m;
     // Horizontal range
