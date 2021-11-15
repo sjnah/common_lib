@@ -98,6 +98,11 @@ struct ROIParams {
     // Horizontal range
     float roi_radius_min_m;
     float roi_radius_max_m;
+    float roi_radius_max_rear_m;
+    // Car size
+    float roi_car_front_m;
+    float roi_car_rear_m;
+    float roi_car_side_m;
     // Vertical range
     float roi_height_below_m;
     float roi_height_above_m;

@@ -65,6 +65,11 @@ static ROIParams getRoiParams(const ros::NodeHandle& nh,
     nh.getParam(ns + "/roi_radius_min_m", params.roi_radius_min_m);
     // "Cylinder" roi filter do not need `roi_radius_max_m`
     nh.param(ns + "/roi_radius_max_m", params.roi_radius_max_m, -1.0f);
+    nh.param(ns + "/roi_radius_max_rear_m", params.roi_radius_max_rear_m, -1.0f);
+
+    nh.getParam(ns + "/roi_car_front_m", params.roi_car_front_m);
+    nh.getParam(ns + "/roi_car_rear_m", params.roi_car_rear_m);
+    nh.getParam(ns + "/roi_car_side_m", params.roi_car_side_m);
     // Vertical range
     nh.getParam(ns + "/roi_height_below_m", params.roi_height_below_m);
     nh.getParam(ns + "/roi_height_above_m", params.roi_height_above_m);
